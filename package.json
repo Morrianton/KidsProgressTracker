@@ -1,0 +1,15 @@
+{
+  "name": "obedience-tracker",
+  "version": "1.0.0",
+  "description": "Tracks Children's Obedience",
+  "main": "main.js",
+  "scripts": {
+    "test": "test tracker",
+    "start": "node server.js"
+  },
+  "author": "Bryson L. Smith",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
