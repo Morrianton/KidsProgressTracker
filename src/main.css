@@ -1,0 +1,271 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28, 196, 28);
+    overflow: hidden;
+    margin: 0;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+N A V B A R 
+------------------------------------------------------------------------------------------------------------------------*/
+
+.navbar {
+    position: absolute;
+    min-width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0, 0.5);
+    box-shadow: 0 3px 6px rgb(0, 0, 0, 0.25)
+}
+
+.title {
+    position: relative;
+    left: 25px;
+    top: -10px;
+    width: 45%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 40pt;
+    color: white;
+    font-family: 'Coiny', cursive;
+}
+
+.title p {
+    margin: 0 8px;
+}
+
+.title span {
+    text-shadow: 0 3px rgb(150, 150, 150);
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+C O N T A I N E R S 
+------------------------------------------------------------------------------------------------------------------------*/
+
+.container {
+    position: relative;
+    top: 275px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+I N D I C A T O R
+------------------------------------------------------------------------------------------------------------------------*/
+
+.slider-on-road {
+    position: relative;
+    right: 293px;
+    min-width: 90px;
+    height: 90px;
+    border: solid 4px white;
+    box-shadow: 0 0 5px 2px rgb(250, 250, 120);
+    border-radius: 2px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+T O K E N
+------------------------------------------------------------------------------------------------------------------------*/
+
+.car {
+    font-size: 40pt;
+    z-index: 2;
+}
+
+.car-shadow {
+    position: relative;
+    bottom: 18px;
+    height: 6px;
+    width: 65px;
+    background-color: rgb(0, 0, 0, 0.25);
+    border-radius: 25%;
+    z-index: 1;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+B O A R D
+------------------------------------------------------------------------------------------------------------------------*/
+
+.road-container {
+    position: relative;
+    left: 50px;
+    min-width: 1120px;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.road {
+    height: 100px;
+    background-color: rgb(70, 70, 70);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.road-line {
+    height: 4px;
+    width: 40px;
+    background-color: yellow;
+}
+
+.sidewalk {
+    height: 30px;
+    background-color: rgb(150, 150, 150);
+    border-bottom: solid 5px rgb(130, 130, 130);
+}
+
+.start {
+    position: relative;
+    right: 10px;
+    height: 160px;
+    min-width: 160px;
+    border-radius: 100px;
+    border: solid 12px white;
+    background-color: red;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26pt;
+    color: white;
+    font-family: 'Coiny', cursive;
+    text-shadow: 0 3px rgb(150, 150, 150);
+    z-index: 0;
+}
+
+.finish {
+    position: relative;
+    left: 110px;
+    height: 160px;
+    min-width: 160px;
+    border-radius: 100px;
+    border: solid 12px white;
+    background-color: green;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26pt;
+    color: white;
+    font-family: 'Coiny', cursive;
+    text-shadow: 0 3px rgb(150, 150, 150);
+    z-index: 1;
+}
+
+.reflection-left {
+    position: absolute;
+    bottom: 90px;
+    left: 47px;
+    height: 65px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.15);
+    transform: rotate(-45deg);
+    z-index: 2;
+}
+
+.reflection-right {
+    position: absolute;
+    bottom: 90px;
+    right: 109px;
+    height: 65px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.15);
+    transform: rotate(-45deg);
+    z-index: 2;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+C O N T R O L 
+------------------------------------------------------------------------------------------------------------------------*/
+
+.control {
+    position: absolute;
+    top: 250px;
+    height: 150px;
+    width: 600px;
+    background-color: white;
+    border-radius: 15px;
+    border-bottom: solid 8px rgb(228, 228, 228);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.25);
+}
+
+.reverse {
+    height: 80px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-bottom: solid 5px darkred;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Coiny', cursive;
+    font-size: 16pt;
+    text-shadow: 0 3px rgb(150, 150, 150);
+}
+
+.reverse:hover {
+    background-color: coral;
+    border-bottom: solid 5px red;
+}
+
+.reverse:focus {
+    background-color: coral;
+    border-bottom: solid 5px red;
+}
+
+.reverse:active {
+    height: 75px;
+    background-color: coral;
+    border: none;
+    text-shadow: none;
+}
+
+.forward {
+    height: 80px;
+    width: 200px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-bottom: solid 5px darkgreen;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Coiny', cursive;
+    font-size: 16pt;
+    text-shadow: 0 3px rgb(150, 150, 150);
+}
+
+.forward:hover {
+    background-color: yellowgreen;
+    border-bottom: solid 5px green;
+}
+
+.forward:focus {
+    background-color: yellowgreen;
+    border-bottom: solid 5px green;
+}
+
+.forward:active {
+    height: 75px;
+    background-color: yellowgreen;
+    border: none;
+    text-shadow: none;
+}
