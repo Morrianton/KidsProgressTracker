@@ -14,7 +14,7 @@ const port = 8080;
 =========================================================================================================================*/
 // middleware
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static('../Obedience Tracker'));
+app.use(express.static("../Kid's Progress Tracker"));
 
 // routes
 app.get('/', (req, res) => {
@@ -23,5 +23,5 @@ app.get('/', (req, res) => {
 
 // listen
 app.listen(port, () => {
-    console.log(`Obedience Tracker listening on port ${port}.`);
+    console.log(`Kid's Progress Tracker listening on port ${port}.`);
 });

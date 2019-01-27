@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>KID'S PROGRESS TRACKER</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./src/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
@@ -16,10 +16,15 @@
 
     <div class="navbar">
         <h1 class="title">
-            <p> 👼 </p>
-            <span> Obedience Tracker </span>
-            <p> 👼 </p>
+            <span> Kid's Progress Tracker </span>
         </h1>
+        <div class="reward-container">
+            <p class="reward-text">REWARD</p>
+            <p class="reward" id="reward">  </p>
+        </div>
+        <div>
+            <p class="state-message" id="state-message"></p>
+        </div>
     </div> <!-- TODO: add cell position num and state of obedience -->
     <div class="container">
         <div class="reflection-left"></div>
@@ -54,9 +59,9 @@
             <div class="car-shadow"></div>
         </div>
         <div class="control">
-            <!-- TODO: turn Buttons into a traffic light -->
-            <button class="forward" id="forward"> Go Forward </button>
-            <button class="reverse" id="reverse"> Go Back </button>
+                <!-- TODO: turn Buttons into a traffic light -->
+            <button class="btn-forward" id="btn-forward"> Go Forward </button>
+            <button class="btn-reverse" id="btn-reverse"> Go Back </button>
         </div>
     </div>
 
